@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GB 문장 배열 도움</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      padding: 30px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 8px 14px;
+      margin-right: 6px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    .cards button {
+      margin: 5px;
+      background: #e9ecef;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .selected {
+      min-height: 30px;
+      padding: 10px;
+      background: #eef4ff;
+      margin-top: 10px;
+    }
+
+    .result {
+      margin-top: 8px;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 영어 문장 도움 -->
+  <div class="container">
+    <h2>GB 영어 문장 도움</h2>
+    <p>단어를 <b>/</b> 로 구분해서 입력</p>
+
+    <input id="words-en" placeholder="Randy / laughed / with us / last week">
+
+    <button onclick="helpEn()">도움 받기</button>
+    <button onclick="resetEn()">다시 하기</button>
+
+    <div id="cards-en" class="cards"></div>
+    <div id="selected-en" class="selected"></div>
+    <div id="result-en" class="result"></div>
+  </div>
+
+  <!-- 한국어 문장 도움 -->
+  <div class="container">
+    <h2>KR 한국어 문장 도움</h2>
+    <p>단어를 <b>/</b> 로 구분해서 입력</p>
+
+    <input id="words-ko" placeholder="Randy / 는 / 지난주에 / 우리와 함께 / 수영했다">
+
+    <button onclick="helpKo()">도움 받기</button>
+    <button onclick="resetKo()">다시 하기</button>
+
+    <div id="cards-ko" class="cards"></div>
+    <div id="selected-ko" class="selected"></div>
+    <div id="result-ko" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tip {
+  color: #666;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#card-area {
+  margin-top: 20px;
+}
+
+.word-card {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.subject { background: #e74c3c; }
+.verb { background: #27ae60; }
+.time { background: #f39c12; }
+.prep { background: #3498db; }
+.other { background: #7f8c8d; }
+
+#sentence-hint {
+  margin-top: 20px;
+  padding: 12px;
+  background: #eef3ff;
+  border-left: 4px solid #2d6cdf;
+}
